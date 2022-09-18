@@ -27,9 +27,9 @@ ul{
 }
 nav{
     display: flex;
-    width: 90%;
+    width: 85%;
     margin: auto;
-    padding: 50px 0;
+    padding: 30px 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -59,16 +59,17 @@ nav ul li{
 -------------------------------- */
 .container{
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    width: 90%;
+    grid-template-rows: 1fr; 
+    width: 85%;
     margin: auto;
+    justify-content: center;
 }
 .flex_container{
     width: 50%;
 }
 .flex_container h1{
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     color: #3A3A3A;
     margin-top: 60px;
     margin-bottom: 16px;
@@ -79,7 +80,7 @@ nav ul li{
     color: #3A3A3A;
     margin-bottom: 30px;
 }
-.flex_container a{
+.flex_container .btn{
     background-color: #E02C6D;
     border-radius: 41px;
     padding: 10px 24px;
@@ -94,4 +95,168 @@ nav ul li{
     left: 100px;
     border: 3px solid #F1E4FF;
     border-radius: 50%;
+}
+
+/* ----------------------------
+     brand logos styles
+------------------------------ */
+.brand_logo-section{
+    width: 70%;
+    margin: auto;
+    margin-top: 69px;
+    margin-bottom: 100px;
+}
+hr{
+    margin: 30px 0;
+    height: 2px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #C0CCDA));
+}
+.logos{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+}
+
+/*------------------------------------
+         popular collections styles
+-------------------------------------- */
+.popular_collection-container{
+    width: 80%;
+    margin: auto;
+}
+.popular_connlection-title h3{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    justify-content: center;
+}
+.product{
+    width: 328px;
+    height: 476px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.products .product_banner img{
+    width: 300px;
+    height: 250px;
+    padding-top: 17px;
+    padding-left: 14px;
+}
+.product_detail{
+    padding-left: 14px;
+}
+.product_detail h3{
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 16px;
+    margin-bottom: 2px;
+}
+.product_detail h2{
+    margin: 5px 0px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+}
+.uis{
+    font-size: 16px;
+    color: #ffc014;
+}
+.rating{
+    font-size: 14px;
+    font-weight: 700;
+    color: #5E6366;
+}
+.product_info p{
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+    margin-top: 5px;
+}
+.see_more p{
+    text-align: right;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E02C6D;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/*--------------------------------------
+         feature product styles
+------------------------------------ */
+.feature_product-container{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.feature_products{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 95px;
+}
+.feature_product h3{
+    font-size: 35px;
+    color: #0A0826;
+    font-weight: 700;
+    margin: 16px 0 20px;
+}
+.feature_product p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-bottom: 30px;
+}
+.fp-btn{
+    background: #E02C6D;
+    color: #fff;
+    padding: 10px 24px;
+}
+
+/*-----------------------------------
+         footer section styles
+-------------------------------- */
+.footer_container{
+    width: 100%;
+    height: 240px;
+    background: #0A0826;
+    padding: 20px 0;
+}
+.footer_title h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.footer_container p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+.footer_icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_icon-container a{
+    color: #fff;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 15px;
+   
 }
